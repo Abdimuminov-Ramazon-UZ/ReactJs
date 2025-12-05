@@ -13,14 +13,17 @@ class State extends React.Component{
 			name:"Max",
 			surname:"Brad",
 			status:"",
-			data:student
+			data:student,
+			search:"Name",
+			active:{}
 		}
 	}
 	render(){
 
 		const onfilter=e=>{
 			console.log(e)
-			let res=student.filter(value=>value.name.includes(e?.target?.value))
+			const {value}=e.target
+			let res=student.filter(item=>`${item[this.state.search]}`.toLowerCase().includes(value.toLowerCase()))
 			this.setState({data:res})
 		}
 		const ondelete=id=>{
@@ -44,11 +47,32 @@ class State extends React.Component{
 			console.log(user)
 			this.setState({data:[...this.state.data,user],name:"",status:""})
 		}
+		const onselect=e=>{
+			this.setState({search:e.target.value})
+		}
+		const onedit=({id,status,name},isSave)=>{
+			if(isSave){
+				let res=this.state.data.map((value)=>value.id===this.state.active.id?{...value,name:this.state.name,status:this.state.status}:value)
+				this.setState({active:null,data:res})
+			}else{
+			this.setState({
+				active:{id,status,name},
+				name:name,
+				status:status
+			})}
+		}
 		return (
 			<div>
 	       <input value={this.state.name} onChange={onchange} name="name" type="text"  placeholder='name'/>
 	       <input value={this.state.status} onChange={onchange} name="status" type="text"  placeholder='status'/>
 					<button onClick={onadd}>add</button>
+					<hr/>
+					<select onChange={onselect}>
+						<option value="id">ID</option>
+						<option value="status">Status</option>
+						<option value="name">Name</option>
+
+					</select>
 				<input onChange={onfilter} type="text"  
 				placeholder='Search'/>
 				<hr />
@@ -69,11 +93,19 @@ class State extends React.Component{
 						return  (
 						<tr>
 							<td>{id}</td>
-							<td>{name}</td>
-							<td>{status}</td>
+							<td>{this.state.active?.id===id?<input  onChange={onchange}
+							name='name'
+							 value={this.state.name} 
+							 type="text"></input>:name}</td>
+							<td>{this.state.active?.id===id?<input   onChange={onchange}
+							name='status'
+							 value={this.state.status} 
+							 type='text'></input>:status}</td>
 							{/* if we don't get here id we don't get important id id come heren map's value */}
 							<td><button onClick={()=>ondelete(id)}>Delete</button></td>
-							<td><button>Edit</button></td>
+							<td><button onClick={()=>onedit({id,status,name},this.state.active?.id===id)}>
+								{this.state.active?.id===id?"Save":"Edit"}
+								</button></td>
 
 						</tr>
 							
