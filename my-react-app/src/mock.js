@@ -1,9 +1,9 @@
-export const student=[
-	{id:1,name:"Max",status:"Ok"},
-	{id:2,name:"Anna",status:"null"},
-	{id:3,name:"Max2",status:"Ok"},
-	{id:4,name:"Max3",status:"null"},
-	{id:5,name:"Max4",status:"Ok"},
-	{id:6,name:"Max5",status:"null"},
-	{id:7,name:"Max6",status:"null"},
-]
+export const stories = [
+  { id: 1, name: "texnomart", type: "platform" },
+  { id: 2, name: "Havas", type: "basement" },
+  { id: 3, name: "Artel", type: "second-floor" },
+  { id: 4, name: "Sohil", type: "first-floor" },
+  { id: 5, name: "Idea", type: "whole-building" },
+  { id: 6, name: "5x5", type: "only room" },
+  { id: 7, name: "Restaturant", type: "large hall" },
+];
