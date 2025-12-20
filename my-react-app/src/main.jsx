@@ -1,9 +1,11 @@
-//Third lesson State
+//Fifth Lesson
+//Youtube Clone
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Stories } from "./App.jsx";
+import YouTube from "./YouTube";
+import "./index.css";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Stories />
+    <YouTube />
   </StrictMode>
 );
