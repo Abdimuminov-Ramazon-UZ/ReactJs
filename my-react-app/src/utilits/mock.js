@@ -12,8 +12,30 @@ export const data = [
     },
   },
   {
-    id: 1,
-    title: "comedy",
+    id: 2,
+    title: "Lab",
+    video: "https://www.freepik.com/free-photos-vectors/default-user",
+    view: 1200,
+    time: 600,
+    user: {
+      img: user_img,
+      name: "About users",
+    },
+  },
+  {
+    id: 3,
+    title: "Hero",
+    video: "https://www.freepik.com/free-photos-vectors/default-user",
+    view: 1200,
+    time: 600,
+    user: {
+      img: user_img,
+      name: "About users",
+    },
+  },
+  {
+    id: 4,
+    title: "Marvel",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -24,7 +46,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "post",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -35,7 +57,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "tragedy",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -46,7 +68,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "drama",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -57,7 +79,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "thriller",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -68,7 +90,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "horror",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -79,7 +101,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "backstage",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -90,7 +112,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "utopic",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -101,7 +123,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "vidoecopy",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -112,7 +134,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "anonim",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -123,7 +145,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "messages",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -134,7 +156,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "vine",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -145,7 +167,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "reels",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -156,7 +178,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "shorts",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -167,7 +189,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "clip",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -178,7 +200,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
+    title: "religion",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
@@ -189,29 +211,7 @@ export const data = [
   },
   {
     id: 1,
-    title: "comedy",
-    video: "https://www.freepik.com/free-photos-vectors/default-user",
-    view: 1200,
-    time: 600,
-    user: {
-      img: user_img,
-      name: "About users",
-    },
-  },
-  {
-    id: 1,
-    title: "comedy",
-    video: "https://www.freepik.com/free-photos-vectors/default-user",
-    view: 1200,
-    time: 600,
-    user: {
-      img: user_img,
-      name: "About users",
-    },
-  },
-  {
-    id: 1,
-    title: "comedy",
+    title: "documentary",
     video: "https://www.freepik.com/free-photos-vectors/default-user",
     view: 1200,
     time: 600,
