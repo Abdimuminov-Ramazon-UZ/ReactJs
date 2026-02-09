@@ -1,11 +1,12 @@
-//Fifth Lesson
-//Youtube Clone
+//Sixth Lesson
+//map and list
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import YouTube from "./YouTube";
 import "./index.css";
+import { Render } from "./render.jsx";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <YouTube />
-  </StrictMode>
+    <Render />
+  </StrictMode>,
 );
