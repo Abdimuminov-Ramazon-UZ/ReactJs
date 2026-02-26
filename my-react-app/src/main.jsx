@@ -1,19 +1,17 @@
-//Seventh Lesson
-//Hooks
-//useState,useEffect,useReducer
+//Eightth Lesson
+//Context API
+//State management,useContext
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HomeworkReducer } from "./hook.jsx";
+import { DataList } from "./context.jsx";
+import { Example } from "./example.jsx";
 import "./index.css";
-
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div style={{ display: "flex", margin: "8px" }}>
-      {/* <Hooks /> */}
-      {/* <Hooks /> */}
-      {/* <NoReturn /> */}
-      {/* <Class /> */}
-      <HomeworkReducer />
-    </div>
+    <DataList>
+      <div style={{ margin: "8px" }}>
+        <Example />
+      </div>
+    </DataList>
   </StrictMode>,
 );
