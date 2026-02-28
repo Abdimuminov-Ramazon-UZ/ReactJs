@@ -7,7 +7,7 @@
 //   }
 //   render() {
 import { useContext } from "react";
-import { DataContext } from "./data.jsx";
+import { DataContext } from "../Context/data.jsx";
 export let Navbar = () => {
   const data = useContext(DataContext);
 

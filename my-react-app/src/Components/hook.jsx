@@ -1,13 +1,12 @@
-import { useContext } from "react";
-import { DataContext } from "./data.jsx";
+import { Data } from "../Context/context.jsx";
 //if we may lose onDelete function so we now assign ondelete fuction to Funtion prototype
 export const Body = () => {
   // let [group] = useState(stud
   // export const Body = ({ students, onDelete = Function.prototype }) => {ents);
   // console.log(group);
-  const [data, setData] = useContext(DataContext);
+  const [data, setData] = Data();
   const dataArr = Object.values(data);
-  console.log(typeof dataArr);
+  console.log(data);
   const onDelete = (id) => {
     let res = dataArr.filter((item) => {
       return item.id !== id;

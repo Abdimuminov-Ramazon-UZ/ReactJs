@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { DataContext } from "./data.jsx";
 
-export const DataList = ({ children }) => {
+export const School = ({ children }) => {
   let [data, setData] = useState([
     { id: 1, name: "MAx1", surname: "Brad" },
     { id: 12, name: "MAx2", surname: "Brad" },

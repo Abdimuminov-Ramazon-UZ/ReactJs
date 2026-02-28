@@ -1,1 +1,0 @@
-const arr=["apple","orange","grap"]
