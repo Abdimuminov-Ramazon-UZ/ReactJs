@@ -1,13 +1,11 @@
-import { Control } from "./controlled";
-import { Extra } from "./hook";
-import { UnControl } from "./uncontrolled";
+import { Fetch } from "./extra";
+import { Login } from "./login.jsx";
 export let Example = () => {
   return (
     <div>
       <h1>Ready and Study</h1>
-      <Extra></Extra>
-      <Control></Control>
-      <UnControl></UnControl>
+      <Fetch></Fetch>
+      <Login></Login>
     </div>
   );
 };
